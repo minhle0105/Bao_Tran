@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Onhanha</title>
+    <style>
+        body {
+            background-color: #ffb6c1;
+        }
+        img {
+            display: block; /* Make the image a block-level element */
+            margin-left: auto; /* Set left margin to auto */
+            margin-right: auto; /* Set right margin to auto */
+        }
+        h1 {
+            text-align: center;
+        }
+        button {
+            display: block;
+            margin: 0 auto; /* Center the button horizontally */
+            padding: 10px 20px; /* Add padding */
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Add hover effect */
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker green */
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="toggleBody()">Ấn ấn</button>
+    <div id="main" style="display: none;">
+        <h1>Hello Bảo Trân</h1>
+        <img src="https://tontonforest.com/cdn/shop/collections/introduce_tobi.png?v=1671441159" alt="Đây là ảnh Bảo Trân">
+    </div>
+</body>
+<script>
+    function toggleBody() {
+        var body = document.getElementById("main");
+        if (body.style.display === "none") {
+            body.style.display = "block";
+        }
+        else
+        {
+            body.style.display = "none";
+        }
+    }
+</script>
+</html>
